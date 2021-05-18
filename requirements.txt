@@ -1,0 +1,2 @@
+alabaster==0.7.12
+appdirs==1.4.4
