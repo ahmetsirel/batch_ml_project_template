@@ -12,6 +12,8 @@ sys.path.append(str(src_directory))
 
 from configuration import Filenames
 
+class Erdem:
+    pass
 
 def prepare_features():
     logger = logging.getLogger(__name__)

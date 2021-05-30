@@ -1,0 +1,24 @@
+site_name: Batch Machine Learning Project
+repo_name: "batch_ml_project_template"
+repo_url: "https://github.com/erdemsirel/batch_ml_project_template"
+
+nav:
+  - Home: index.md
+  - About: about.md
+
+theme:
+  name: "material"
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          setup_commands:
+            - import sys
+            - sys.path.append("./src")
+          rendering:
+            show_source: false
+      custom_templates: templates
+
