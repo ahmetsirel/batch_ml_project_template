@@ -15,7 +15,16 @@ from configuration import Filenames
 class Erdem:
     pass
 
-def prepare_features():
+def prepare_features(run_date=None):
+    """This function prepared the features by using the data in ./data/raw directory.
+
+    Args:
+        run_date (str, optional): Used as a filter. Defaults to None.
+
+    Returns:
+        [type]: [description]
+    """
+
     logger = logging.getLogger(__name__)
     logger.info('making final data set from raw data')
 
